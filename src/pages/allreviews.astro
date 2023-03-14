@@ -1,0 +1,18 @@
+---
+import Mainlayout from "../layouts/Mainlayout.astro";
+
+const posts = await Astro.glob("./reviews/*md");
+---
+
+<Mainlayout title="All posts" description="all the posts in the blog">
+  <h1 class="text-4xl">All the posts</h1>
+  <div>
+    {
+      posts.map((post) => (
+        <div>
+          <a href={post.url}> {post.frontmatter.title} </a>
+        </div>
+      ))
+    }
+  </div>
+</Mainlayout>

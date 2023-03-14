@@ -1,15 +1,13 @@
 ---
+import Mainlayout from "../layouts/Mainlayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Mainlayout title="Blog German" description="My bloggero ">
+  <h1 class="text-5xl pt-16">The Book Critic</h1>
+  <p class="py-12 text-xl">
+    Its a compilation of my reviews of the book industry, how it develop in the
+    past and what is waiting for us in the future
+  </p>
+
+  <h3>My last book review</h3>
+</Mainlayout>

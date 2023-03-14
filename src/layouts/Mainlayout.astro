@@ -1,0 +1,27 @@
+---
+import MainHead from "./MainHead.astro";
+import Footer from "../components/Footer.astro";
+import Nav from "../components/Nav.astro";
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props as Props;
+---
+
+<html lang="en">
+  <MainHead title={title} description={description} />
+  <body>
+    <div class="min-h-screen grid bg-slate-300">
+      <main class="flex flex-col min-h-screen">
+        <Nav class="mb-10" />
+        <div class="flex flex-col py-0 mx-auto w-2/3 h-full items-center">
+          <slot> default Text</slot>
+        </div>
+        <Footer class="w-full" />
+      </main>
+    </div>
+  </body>
+</html>

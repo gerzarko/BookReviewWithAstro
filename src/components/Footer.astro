@@ -1,0 +1,16 @@
+---
+import Mainlayout from "../layouts/Mainlayout.astro";
+---
+
+<footer class="m-auto">
+  <small
+    >Copyright &copy; <span id="copyright"></span>
+    Allrights reserved
+  </small>
+</footer>
+
+<script>
+  document.querySelector("#copyright")!.textContent = new Date()
+    .getFullYear()
+    .toString();
+</script>
