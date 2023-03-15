@@ -4,6 +4,7 @@ layout: "../../layouts/ReviewLayout.astro"
 title: The Road
 date: 02/10/2020
 author: Cormac McCarthy
+draft: false
 ---
 
 <h1>I really feel compelled to write up a review of McCarthy's The Road as this book really worked for me (for those of you who haven't read it, there are no real spoilers below, only random quotes and thematic commentary). I read it last night in one sitting. Hours of almost nonstop reading. I found it to be an excellent book on so many levels that I am at a loss as to where to begin. It was at once gripping, terrifying, utterly heart-wrenching, and completely beautiful. I have read most of McCarthy's other books and am already a big fan, but this one is different, perhaps his best in terms of lean, masterful prose, plot presentation, and flat-out brilliant storytelling.</h1>

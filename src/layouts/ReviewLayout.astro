@@ -1,20 +1,29 @@
 ---
 import Mainlayout from "./Mainlayout.astro";
-const { title, date, author } = Astro.props.frontmatter;
+import { newDate } from "../utils";
 
-const newDate: string = new Date(date).toLocaleDateString("en-Uk", {
-  year: "numeric",
-  month: "long",
-  day: "numeric",
-});
+import Image from "astro/components/Image.astro";
+
+const { title, date, author, draft } = Astro.props.frontmatter;
+
+const { url } = Astro.props;
+
+console.log(url);
+
+const urlName = url?.split("/")[2];
 ---
 
 <Mainlayout title="Blog" description="blog post">
   <h1 class="text-3xl bg-red-200">{title}</h1>
   <div class="flex flex-row justify-between w-full">
-    <h2>{newDate}</h2>
+    {draft && <h3 class="bg-red-300">Draft </h3>}
+    <h2>{newDate(date)}</h2>
     <h2>Author {author}</h2>
   </div>
+
+  <!-- <Image
+    class="mb-8 w-1/3 h-1/3 aspectRatio={5:3}"
+    src={`../../public/images${urlName}.jpeg` "} /> -->
 
   <div class="prose">
     <slot />

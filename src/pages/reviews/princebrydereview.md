@@ -3,7 +3,8 @@ layout: "../../layouts/ReviewLayout.astro"
 
 title: The Princess Bride
 date: 02/08/2019
-Author: William Goldman
+author: William Goldman
+draft: false
 ---
 
 Summary: The book opens with author William Goldman telling how his father would read to him as a young child. One story he would read was titled The Princess Bride by S. Morgenstern, a man from Florin. Goldman loved the story so much as a child, so he decides to give a copy to his ten-year-old son on his tenth birthday. Jason, his son, can’t seem to get into the story at all, and Goldman soon realizes that this isn’t the same story his father told him. This book has incredibly uninteresting parts that Goldman doesn’t recall. So, he begins to retell the story by creating a whole new book with only the good stuff.
